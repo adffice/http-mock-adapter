@@ -1,4 +1,4 @@
-import 'package:dio/dio.dart';
+import 'package:diox/diox.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
 import 'package:test/test.dart';
 
@@ -247,7 +247,7 @@ void main() {
               () => dio.get(path),
               throwsA(predicate((e) =>
                   e is DioError &&
-                  e.type == DioErrorType.other &&
+                  e.type == DioErrorType.unknown &&
                   e.error is AssertionError)));
         });
       });

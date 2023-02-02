@@ -1,5 +1,5 @@
-import 'package:dio/dio.dart';
-import 'package:dio/src/parameter.dart';
+import 'package:diox/diox.dart';
+import 'package:diox/src/parameter.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
 import 'package:test/test.dart';
 

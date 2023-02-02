@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart';
-import 'package:dio/dio.dart';
+import 'package:diox/diox.dart';
 // ignore: implementation_imports
-import 'package:dio/src/parameter.dart' show ListParam;
+import 'package:diox/src/parameter.dart' show ListParam;
 import 'package:http_mock_adapter/src/matchers/matcher.dart';
 
 /// Matches [ListParam] instance by comparing

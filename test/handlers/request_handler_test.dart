@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:dio/dio.dart';
+import 'package:diox/diox.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
 import 'package:http_mock_adapter/src/handlers/request_handler.dart';
 import 'package:http_mock_adapter/src/response.dart';
@@ -106,7 +106,7 @@ void main() {
         requestOptions: RequestOptions(
           path: 'path',
         ),
-        type: DioErrorType.response,
+        type: DioErrorType.badResponse,
       );
 
       requestHandler.throws(

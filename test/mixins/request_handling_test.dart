@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:dio/dio.dart';
+import 'package:diox/diox.dart';
 import 'package:http_mock_adapter/http_mock_adapter.dart';
 import 'package:http_mock_adapter/src/mixins/mixins.dart';
 import 'package:test/test.dart';
@@ -130,7 +130,7 @@ void main() {
               statusCode: 500,
               requestOptions: RequestOptions(path: path),
             ),
-            type: DioErrorType.response,
+            type: DioErrorType.badResponse,
           );
 
           tester.onGet(
@@ -147,7 +147,7 @@ void main() {
                 (DioError error) =>
                     error is DioError &&
                     error is MockDioError &&
-                    error.message == dioError.error.toString(),
+                    error.error == dioError.error,
               ),
             ),
           );

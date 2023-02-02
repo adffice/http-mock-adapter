@@ -1,6 +1,6 @@
-import 'package:dio/dio.dart';
+import 'package:diox/diox.dart';
 // ignore: implementation_imports
-import 'package:dio/src/parameter.dart' show ListParam;
+import 'package:diox/src/parameter.dart' show ListParam;
 import 'package:http_mock_adapter/src/matchers/any.dart';
 import 'package:http_mock_adapter/src/matchers/boolean.dart';
 import 'package:http_mock_adapter/src/matchers/decimal.dart';
